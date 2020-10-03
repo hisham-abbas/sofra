@@ -1,0 +1,32 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title add new offer
+    include pug/csslinks
+  body
+    
+    // start header
+    include pug/header
+    // end header
+     
+    // start add a new offer
+    div(class="add-new-offer")
+      div(class="container-fluid")
+        div(class="title")
+          h5 اضافة عرض جديد
+        form
+          div(class="image")
+            img(src="imgs/default-image.jpg" alt="image")
+            span صورة العرض
+          input(type="text" placeholder="اسم العرض")
+          textarea(placeholder="وصف مختصر")
+          input(type="number" placeholder="السعر")
+          input(type="submit" value="اضافة")
+    // end add a new offer
+    
+    // start footer
+    include pug/footer
+    // end footer
+    
+    include pug/jslinks

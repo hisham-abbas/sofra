@@ -1,0 +1,49 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title my order
+    include pug/csslinks
+  body
+    
+    // start header 
+    include pug/header
+    // end header 
+    
+    // start my order 
+    div(class="my-order")
+      div(class="background")
+        div(class="container-fluid")
+          div(class="row")
+            div(class="col-12 col-md-6")
+              div(class="recently-order")
+                h5 الطلبات الحالية
+            div(class="col-12 col-md-6")
+              div(class="past-order")
+                h5 الطلبات السابقة
+      div(class="container-fluid")
+        div(class="box")
+          div(class="image")
+            img(src="imgs/meal-img.jpg" alt="image")
+          ul(class="details")
+            li: h3 بيف برجر 250 جرام
+            li رقم الطلب: 564416
+            li المجموع: 75 ريال
+          ul(class="check")
+            li: a(href="#"): button استلام
+            li: a(href="#"): button رفض
+        div(class="box")
+          div(class="image")
+            img(src="imgs/meal-img.jpg" alt="image")
+          ul(class="details")
+            li: h3 بيف برجر 250 جرام
+            li رقم الطلب: 564416
+            li المجموع: 75 ريال
+          ul(class="check")
+            li: a(href="#"): button استلام
+            li: a(href="#"): button رفض
+    // end my order 
+    
+    // start footer 
+    include pug/footer
+    // end footer 

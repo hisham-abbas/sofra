@@ -1,0 +1,32 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    include pug/csslinks
+  body
+    
+    // start header 
+    include pug/header
+    // end header 
+    
+    // start register 
+    div(class="register")
+      div(class="container-fluid")
+        form
+          div(class="image")
+            img(src="imgs/use-img.png" alt="image")
+          input(type="text" placeholder="الاسم")
+          input(type="email" placeholder="البريد الالكترونى")
+          input(type="number" placeholder="الجوال")
+          input(type="text" placeholder="المدينة")
+          input(type="text" placeholder="الحي")
+          input(type="password" placeholder="كلمة المرور")
+          input(type="password" placeholder="تاكيد كلمة المرور")
+          input(type="submit" value="دخول")
+    // end register 
+    
+    // start footer 
+    include pug/footer
+    // end footer 
+    
+    include pug/jslinks

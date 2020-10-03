@@ -1,0 +1,71 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title my current orders
+    include pug/csslinks
+  body
+    
+    // start header 
+    include pug/header
+    // end header 
+    
+    // start requstslink 
+    div(class="orders")
+      div(class="container-fluid")
+        div(class="row")
+          div(class="col")
+            div(class="new-orders")
+              h5 طلبات جديدة
+          div(class="col")
+            div(class="current-orders")
+              h5 طلبات حالية
+          div(class="col")
+            div(class="pervious-orders")
+              h5 طلبات سابقة
+    // end requstslink 
+    
+    // start client 
+    div(class="client")
+      div(class="container-fluid")
+        div(class="row")
+          div(class="col-12 col-md-6")
+            div(class="image")
+              img(src="imgs/jakob-owens-565883-unsplash.png" alt="image")
+          div(class="col-12 col-md-6")
+            ul(class="details")
+              li: h3 العميل: مازن محمد
+              li رقم الطلب: 564416
+              li المجموع: 75 ريال
+              li العنوان: 127 شارع المعز بن على - حى الروضة - الرياض
+            div(class="row")
+              div(class="col-12 col-md-6")
+                span 01006383877
+              div(class="col-12 col-md-6")
+                span تاكيد الاستلام
+                div(class="clear-fix")
+    div(class="client")
+      div(class="container-fluid")
+        div(class="row")
+          div(class="col-12 col-md-6")
+            div(class="image")
+              img(src="imgs/jakob-owens-565883-unsplash.png" alt="image")
+          div(class="col-12 col-md-6")
+            ul(class="details")
+              li: h3 العميل: مازن محمد
+              li رقم الطلب: 564416
+              li المجموع: 75 ريال
+              li العنوان: 127 شارع المعز بن على - حى الروضة - الرياض
+            div(class="row")
+              div(class="col-12 col-md-6")
+                span 01006383877
+              div(class="col-12 col-md-6")
+                span تاكيد الاستلام
+                div(class="clear-fix")
+    // end client 
+    
+    // start footer 
+    include pug/footer
+    // end footer 
+    
+    include pug/jslinks

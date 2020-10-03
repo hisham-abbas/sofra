@@ -1,0 +1,42 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title cart-1
+    include pug/csslinks
+  body
+    
+    // start header
+    include pug/header
+    // end header
+    
+    // start cart-1 
+    div(class="cart-1")
+      div(class="container-fluid")
+        div(class="cart")
+          div(class="image")
+            img(src="imgs/erik-odiin-787777-unsplash.jpg" alt="image")
+          ul(class="details")
+            li بيف برجر 250 جرام
+            li 75 ريال
+            li البائع: wild burger
+            li الكمية: 1
+          div(class="clear-fix")
+          button مسح
+        div(class="cart")
+          div(class="image")
+            img(src="imgs/erik-odiin-787777-unsplash.jpg" alt="image")
+          ul(class="details")
+            li بيف برجر 250 جرام
+            li 75 ريال
+            li البائع: wild burger
+            li الكمية: 1
+          div(class="clear-fix")
+          button مسح
+    // end cart-1 
+    
+    // start footer
+    include pug/footer
+    // end footer
+    
+    include pug/jslinks

@@ -1,0 +1,75 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title meal page
+    include pug/csslinks
+  body
+    
+    // start header 
+    include pug/header
+    // end header 
+    
+    // start beef burger 
+    div(class="beef-burger")
+      div(class="container-fluid")
+        div(class="image")
+          img(src="imgs/burger.jpg" alt="image")
+        div(class="title")
+          h5 بيف برجر 250 جرام
+        p وجبة بيف برجر 250 جرام من اللحم المشوى مع السلطة و الصوص
+        ul
+          li السعر: 54 ريال
+          li مدة تجهيز الطلب: 20 دقيقة
+          li رسوم التوصيل: 10 ريال
+        hr
+        div(class="image-store")
+          img(src="imgs/Group 1039.png" alt="image")
+        span معلومات عن هذا المتجر
+        div(class="title-user")
+          h3 تقيمات المستخدمين
+          span تقييم 155
+        div(class="rates")
+          div(class="fontawsome")
+            i(class="fa fa-star fa-2x active")
+            i(class="fa fa-star fa-2x active")
+            i(class="fa fa-star fa-2x active")
+            i(class="fa fa-star fa-2x")
+            i(class="fa fa-star fa-2x")
+          p جميل جدا و عظيم و حاجة ميت فل و عشرة و اللحمة مستوية و شغل فاخر من الاخر
+        div(class="rates")
+          div(class="fontawsome")
+            i(class="fa fa-star fa-2x active")
+            i(class="fa fa-star fa-2x active")
+            i(class="fa fa-star fa-2x active")
+            i(class="fa fa-star fa-2x")
+            i(class="fa fa-star fa-2x")
+          p جميل جدا و عظيم و حاجة ميت فل و عشرة و اللحمة مستوية و شغل فاخر من الاخر
+        div(class="rates")
+          div(class="fontawsome")
+            i(class="fa fa-star fa-2x active")
+            i(class="fa fa-star fa-2x active")
+            i(class="fa fa-star fa-2x active")
+            i(class="fa fa-star fa-2x")
+            i(class="fa fa-star fa-2x")
+          p جميل جدا و عظيم و حاجة ميت فل و عشرة و اللحمة مستوية و شغل فاخر من الاخر
+        div(class="title-you")
+          h3 اضف تقيمك
+        div(class="fontawsome-you")
+          i(class="fa fa-star fa-2x active")
+          i(class="fa fa-star fa-2x active")
+          i(class="fa fa-star fa-2x active")
+          i(class="fa fa-star fa-2x")
+          i(class="fa fa-star fa-2x")
+        form(action="GET")
+          textarea(placeholder="اضف تقييمك")
+          input(type="submit" value="ارسال")
+          
+        
+    // end beef burger 
+    
+    // start footer 
+    include pug/footer
+    // end footer 
+    
+    include pug/jslinks

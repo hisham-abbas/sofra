@@ -1,0 +1,33 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title add new product
+    include pug/csslinks
+  body
+    
+    // start header
+    include pug/header
+    // end header
+    
+    // start add a new product
+    div(class="add-new-product")
+      div(class="container-fluid")
+        div(class="title")
+          h5 اضافة منتج جديد
+        form
+          div(class="image")
+            img(src="imgs/default-image.jpg" alt="image")
+            span صورة المنتج
+          input(type="text" placeholder="اسم المنتج")
+          textarea(placeholder="وصف مختصر")
+          input(type="number" placeholder="السعر")
+          input(type="number" placeholder="مدة التجهيز")
+          input(type="submit" value="اضافة")
+    // end add a new product
+    
+    // start footer
+    include pug/footer
+    // end footer
+    
+    include pug/jslinks

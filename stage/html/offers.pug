@@ -1,0 +1,39 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title offers
+    include pug/csslinks
+  body
+    
+    // start header 
+    include pug/header
+    // end header 
+    
+    // start offers 
+    div(class="offers")
+      div(class="container-fluid")
+        div(class="title")
+          h4 العروض المتاحة الان
+        a(href="#"): button اضف عرص جديد
+        div(class="row")
+          div(class="col-12 col-md-6")
+            div(class="image")
+              img(src="imgs/16285.png" alt="image")
+          div(class="col-12 col-md-6")
+            div(class="image")
+              img(src="imgs/16285.png" alt="image")
+        div(class="row")
+          div(class="col-12 col-md-6")
+            div(class="image")
+              img(src="imgs/16285.png" alt="image")
+          div(class="col-12 col-md-6") 
+            div(class="image")
+              img(src="imgs/16285.png" alt="image")
+    // end offers 
+    
+    // start footer 
+    include pug/footer
+    // end footer 
+    
+    include pug/jslinks

@@ -1,0 +1,101 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title restaurant page seller
+    include pug/csslinks
+  body
+    
+    // start header 
+    include pug/header
+    // end header 
+    
+    // start restaurant page seller 
+    div(class="page-seller")
+      div(class="banner")
+        div(class="overlay")
+        div(class="image")
+          img(src="imgs/res-img.png" alt="image")
+        ul(class="rate")
+          li: i(class="fa fa-star active")
+          li: i(class="fa fa-star active")
+          li: i(class="fa fa-star active")
+          li: i(class="fa fa-star")
+          li: i(class="fa fa-star")
+    // end restaurant page seller 
+    
+    // start list of foods
+    div(class="list-of-foods")
+      div(class="title text-center")
+        h3 قائمة الطعام \ منتجاتى
+      a(href="#"): button اضف منتج جديد
+      div(class="container-fluid")
+        div(class="row")
+          div(class="col-12 col-md-4")
+            div(class="image")
+              i(class="fas fa-times-circle")
+              img(src="imgs/meal-img.jpg" alt="image")
+            div(class="details")
+              h4(class="text-center") بيف برجر 250 جرام
+              span هناك حقيقة مثبتة ان الفراخ الكرسى حارة
+              div(class="image")
+                img(src="imgs/piggy-bank.png" alt="image")
+                span 75 ريال
+          div(class="col-12 col-md-4")
+            div(class="image")
+              i(class="fas fa-times-circle")
+              img(src="imgs/meal-img.jpg" alt="image")
+            div(class="details")
+              h4(class="text-center") بيف برجر 250 جرام
+              span هناك حقيقة مثبتة ان الفراخ الكرسى حارة
+              div(class="image")
+                img(src="imgs/piggy-bank.png" alt="image")
+                span 75 ريال
+          div(class="col-12 col-md-4")
+            div(class="image")
+              i(class="fas fa-times-circle")
+              img(src="imgs/meal-img.jpg" alt="image")
+            div(class="details")
+              h4(class="text-center") بيف برجر 250 جرام
+              span هناك حقيقة مثبتة ان الفراخ الكرسى حارة
+              div(class="image")
+                img(src="imgs/piggy-bank.png" alt="image")
+                span 75 ريال
+        div(class="row")
+          div(class="col-12 col-md-4")
+            div(class="image")
+              i(class="fas fa-times-circle")
+              img(src="imgs/meal-img.jpg" alt="image")
+            div(class="details")
+              h4(class="text-center") بيف برجر 250 جرام
+              span هناك حقيقة مثبتة ان الفراخ الكرسى حارة
+              div(class="image")
+                img(src="imgs/piggy-bank.png" alt="image")
+                span 75 ريال
+          div(class="col-12 col-md-4")
+            div(class="image")
+              i(class="fas fa-times-circle")
+              img(src="imgs/meal-img.jpg" alt="image")
+            div(class="details")
+              h4(class="text-center") بيف برجر 250 جرام
+              span هناك حقيقة مثبتة ان الفراخ الكرسى حارة
+              div(class="image")
+                img(src="imgs/piggy-bank.png" alt="image")
+                span 75 ريال
+          div(class="col-12 col-md-4")
+            div(class="image")
+              i(class="fas fa-times-circle")
+              img(src="imgs/meal-img.jpg" alt="image")
+            div(class="details")
+              h4(class="text-center") بيف برجر 250 جرام
+              span هناك حقيقة مثبتة ان الفراخ الكرسى حارة
+              div(class="image")
+                img(src="imgs/piggy-bank.png" alt="image")
+                span 75 ريال
+    // end list of foods
+    
+    // start footer 
+    include pug/footer
+    // end footer 
+    
+    include pug/jslinks

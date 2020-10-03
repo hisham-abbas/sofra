@@ -1,0 +1,42 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title register seller
+    include pug/csslinks
+  body
+    
+    // start header 
+    include pug/header
+    // end header 
+    
+    // start register seller 
+    div(class="register-seller")
+      div(class="container-fluid")
+        form
+          div(class="image")
+            img(src="imgs/use-img.png" alt="image")
+          input(type="text" placeholder="الاسم")
+          input(type="email" placeholder="البريد الالكترونى")
+          input(type="number" placeholder="الجوال")
+          input(type="text" placeholder="المدينة")
+          input(type="text" placeholder="الحي")
+          input(type="password" placeholder="كلمة المرور")
+          input(type="password" placeholder="تاكيد كلمة المرور")
+          input(type="number" placeholder="الحد الادنى للطلب")
+          input(type="number" placeholder="رسوم التوصيل")
+          input(type="number" placeholder="الواتس اب")
+          div(class="row")
+            div(class="col-12 col-md-4")
+              span صورة المتجر
+            div(class="col-12 col-md-8")
+              div(class="photo")
+                img(src="imgs/default-image.jpg" alt="image")
+          input(type="submit" value="دخول")
+    // end register seller 
+    
+    // start footer 
+    include pug/footer
+    // end footer 
+    
+    include pug/jslinks

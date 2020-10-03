@@ -1,0 +1,1116 @@
+@font-face {
+  font-family: cairo;
+  src: url(../fonts/Cairo-Regular.ttf); }
+
+body {
+  font-family: cairo; }
+
+.clear-fix {
+  clear: both; }
+
+.header {
+  padding: 10px 0;
+  background-color: #ececec; }
+  .header ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right; }
+    .header ul li i {
+      border-radius: 18px;
+      color: #ec3454; }
+    .header ul li:last-child {
+      width: 80%; }
+      .header ul li:last-child input {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #f3f3f3; }
+  .header .image img {
+    width: 40%; }
+  .header .burger {
+    height: 100%;
+    display: flex;
+    float: left;
+    align-items: center;
+    color: #ec3454; }
+
+@media (max-width: 768px) {
+  .header .image {
+    text-align: center;
+    margin-top: 20px; }
+  .header .burger {
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0; } }
+
+.banner {
+  position: relative;
+  background-image: url(../imgs/header.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 743px; }
+  .banner .head {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%); }
+    .banner .head p {
+      font-size: 40px; }
+    .banner .head img {
+      width: 30%; }
+
+.fav-food {
+  background-image: url(../imgs/favor-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  padding: 30px 0; }
+  .fav-food .title {
+    text-align: center; }
+    .fav-food .title h2 {
+      font-weight: bolder; }
+  .fav-food form {
+    margin-top: 40px; }
+    .fav-food form input {
+      border: none;
+      outline: none;
+      padding: 10px;
+      width: 70%;
+      border-radius: 10px; }
+    .fav-food form input[type="text"] {
+      float: left; }
+    .fav-food form input[type="search"] {
+      float: right; }
+  .fav-food .foods .lists {
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 40px;
+    padding: 30px 10px;
+    border-radius: 10px; }
+    .fav-food .foods .lists .image {
+      display: inline-block;
+      width: 50%;
+      float: right;
+      text-align: right; }
+      .fav-food .foods .lists .image img {
+        width: 70%; }
+    .fav-food .foods .lists .details {
+      display: inline-block;
+      width: 50%;
+      text-align: right; }
+      .fav-food .foods .lists .details .brand h3 {
+        font-weight: bolder;
+        color: #ec3454; }
+      .fav-food .foods .lists .details .rate i {
+        display: inline-block;
+        margin: 5px; }
+      .fav-food .foods .lists .details .unlock {
+        text-align: left; }
+      .fav-food .foods .lists .details .unlock::before {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #16bf4e;
+        position: relative;
+        top: 10px;
+        left: 10px; }
+      .fav-food .foods .lists .details .min-order {
+        font-size: 20px; }
+
+@media (max-width: 768px) {
+  .fav-food .foods .lists .image, .fav-food .foods .lists .details {
+    display: block;
+    width: 100%;
+    text-align: center; }
+  .fav-food .foods .lists .image img {
+    width: 30%; } }
+
+.offers {
+  padding: 100px 0; }
+  .offers .image {
+    text-align: right; }
+    .offers .image img {
+      width: 70%; }
+  .offers .text {
+    position: relative;
+    height: 100%;
+    background-image: url(../imgs/offer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    z-index: 1; }
+    .offers .text .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      background-color: rgba(163, 114, 123, 0.9);
+      z-index: 2; }
+    .offers .text p {
+      color: #fff;
+      padding: 10px;
+      line-height: 2;
+      text-align: center;
+      font-size: 20px;
+      z-index: 3; }
+
+.our-app {
+  background-image: url(../imgs/app-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 603px;
+  padding-top: 50px; }
+  .our-app .title {
+    text-align: right; }
+    .our-app .title h4 {
+      color: #fff; }
+  .our-app .image img {
+    width: 100%; }
+  .our-app .image-btn {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    height: 100%; }
+    .our-app .image-btn img {
+      width: 60%; }
+
+@media (max-width: 768px) {
+  .our-app .title {
+    text-align: center; }
+  .our-app .image-btn {
+    justify-content: center; } }
+
+.add-new-offer {
+  padding: 30px 0; }
+  .add-new-offer .title {
+    text-align: center;
+    color: #ec3454; }
+    .add-new-offer .title h5 {
+      font-weight: bold; }
+  .add-new-offer form {
+    background-color: #ececec;
+    padding: 30px;
+    border-radius: 30px; }
+    .add-new-offer form .image {
+      text-align: center;
+      margin-bottom: 50px; }
+      .add-new-offer form .image img {
+        width: 15%; }
+      .add-new-offer form .image span {
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold; }
+    .add-new-offer form input, .add-new-offer form textarea {
+      display: block;
+      width: 80%;
+      margin: auto;
+      padding: 15px;
+      border: none;
+      outline: none;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      background-color: #f3f3f3;
+      font-size: 20px; }
+    .add-new-offer form textarea {
+      min-height: 200px; }
+    .add-new-offer form input[type="submit"] {
+      width: 20%;
+      margin: auto;
+      background-color: #d02450;
+      color: #fff; }
+
+.add-new-product {
+  padding: 30px 0; }
+  .add-new-product .title {
+    text-align: center;
+    color: #ec3454; }
+    .add-new-product .title h5 {
+      font-weight: bold; }
+  .add-new-product form {
+    background-color: #ececec;
+    padding: 30px;
+    border-radius: 30px; }
+    .add-new-product form .image {
+      text-align: center;
+      margin-bottom: 50px; }
+      .add-new-product form .image img {
+        width: 15%; }
+      .add-new-product form .image span {
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold; }
+    .add-new-product form input, .add-new-product form textarea {
+      display: block;
+      width: 80%;
+      margin: auto;
+      padding: 15px;
+      border: none;
+      outline: none;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      background-color: #f3f3f3;
+      font-size: 20px; }
+    .add-new-product form textarea {
+      min-height: 200px; }
+    .add-new-product form input[type="submit"] {
+      width: 20%;
+      margin: auto;
+      background-color: #d02450;
+      color: #fff; }
+
+.cart-1 {
+  background-image: url(../imgs/cart-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 1147px;
+  padding: 50px 0; }
+  .cart-1 .cart {
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto 50px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #ccc, -10px -10px 10px #ccc;
+    border-radius: 30px;
+    padding: 15px; }
+    .cart-1 .cart .image, .cart-1 .cart .details {
+      width: 50%; }
+    .cart-1 .cart .image {
+      float: right;
+      text-align: right; }
+      .cart-1 .cart .image img {
+        width: 100%;
+        border-radius: 20px; }
+    .cart-1 .cart ul.details {
+      float: left;
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+      .cart-1 .cart ul.details li {
+        text-align: right;
+        font-weight: bold;
+        margin-right: 15px;
+        margin-bottom: 10%; }
+    .cart-1 .cart button {
+      background-color: transparent;
+      padding: 10px;
+      border-radius: 15px;
+      background-color: #ec3454;
+      color: #fff;
+      border: none;
+      outline: none;
+      width: 30%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 30px; }
+
+@media (max-width: 768px) {
+  .cart-1 .cart .image, .cart-1 .cart .details {
+    width: 100%; }
+  .cart-1 .cart .image {
+    float: none;
+    text-align: right; }
+  .cart-1 .cart ul.details {
+    float: none; }
+    .cart-1 .cart ul.details li {
+      text-align: center; } }
+
+.cart {
+  background-image: url(../imgs/cart-bg.png);
+  background-size: cover;
+  background-position: center; }
+
+.contact-us {
+  margin: 30px 0; }
+  .contact-us form {
+    background-color: #b7164c;
+    padding: 30px 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px; }
+    .contact-us form .title {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 50px; }
+      .contact-us form .title h5 {
+        font-weight: bold; }
+    .contact-us form input, .contact-us form textarea {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+      font-size: 20px; }
+    .contact-us form textarea {
+      border-radius: 0;
+      border-radius: 10px;
+      min-height: 200px; }
+    .contact-us form input[type="submit"] {
+      width: 30%;
+      margin: auto;
+      font-weight: bold;
+      background-color: #240041;
+      color: #fff; }
+
+.beef-burger {
+  background-image: url(../imgs/meal-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 1735px; }
+  .beef-burger .image {
+    width: 80%;
+    margin: 40px auto; }
+    .beef-burger .image img {
+      width: 100%;
+      border-radius: 30px; }
+  .beef-burger .title {
+    text-align: center; }
+    .beef-burger .title h5 {
+      font-weight: bold; }
+  .beef-burger p {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold; }
+  .beef-burger ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    width: 80%;
+    margin: auto;
+    font-weight: bold; }
+    .beef-burger ul li {
+      margin: 20px 0; }
+  .beef-burger .image-store {
+    width: 30%;
+    margin: auto; }
+    .beef-burger .image-store img {
+      width: 100%; }
+  .beef-burger span {
+    display: block;
+    text-align: right;
+    color: #ff465c;
+    width: 80%;
+    margin: 50px auto;
+    font-size: 20px; }
+  .beef-burger .title-user {
+    text-align: right; }
+    .beef-burger .title-user h3 {
+      font-weight: bold;
+      color: #ec3454;
+      padding: 10px;
+      border-right: 3px solid #333; }
+    .beef-burger .title-user span {
+      margin: 0;
+      color: #333;
+      font-size: 15px; }
+  .beef-burger .rates {
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0; }
+    .beef-burger .rates .fontawsome {
+      position: relative;
+      left: 50%;
+      top: 10px;
+      transform: translateX(-50%);
+      display: inline-block;
+      padding: 10px;
+      border-radius: 30px;
+      text-align: center;
+      background-color: #fff; }
+      .beef-burger .rates .fontawsome i {
+        display: inline-block;
+        margin: 10px; }
+      .beef-burger .rates .fontawsome i.active {
+        color: #ec3454; }
+    .beef-burger .rates p {
+      color: #ec3454; }
+  .beef-burger .title-you {
+    text-align: right;
+    margin-top: 50px; }
+    .beef-burger .title-you h3 {
+      font-weight: bold;
+      color: #ec3454;
+      padding: 10px;
+      border-right: 3px solid #333; }
+  .beef-burger .fontawsome-you {
+    position: relative;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #e5e5e5; }
+    .beef-burger .fontawsome-you i {
+      display: inline-block;
+      margin: 10px; }
+    .beef-burger .fontawsome-you i.active {
+      color: #ec3454; }
+  .beef-burger form textarea {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    border: none;
+    outline: none;
+    min-height: 200px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 10px 10px 10px #ccc;
+    font-size: 25px;
+    margin-bottom: 60px; }
+  .beef-burger form input[type="submit"] {
+    position: relative;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #c41e4e;
+    color: #fff;
+    font-weight: bold; }
+
+.account {
+  margin: 30px 0; }
+  .account form {
+    background-color: #b7164c;
+    padding: 30px 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px; }
+    .account form .image {
+      width: 30%;
+      margin: auto; }
+      .account form .image img {
+        width: 100%; }
+    .account form input, .account form textarea {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+      font-size: 20px; }
+    .account form textarea {
+      border-radius: 0;
+      border-radius: 10px;
+      min-height: 200px; }
+    .account form input[type="submit"] {
+      width: 35%;
+      padding: 10px;
+      margin: auto;
+      font-weight: bold;
+      background-color: #240041;
+      color: #fff; }
+
+.my-order .background {
+  padding: 40px 0;
+  background-color: #ec3454;
+  color: #fff;
+  text-align: center; }
+  .my-order .background .recently-order h5, .my-order .background .past-order h5 {
+    font-weight: bold; }
+
+.my-order .box {
+  padding: 30px 10px;
+  margin: 50px 0;
+  background-color: #ececec; }
+  .my-order .box .image, .my-order .box .details, .my-order .box .check {
+    display: inline-block;
+    width: 30%; }
+  .my-order .box .image {
+    text-align: left; }
+    .my-order .box .image img {
+      width: 100%; }
+  .my-order .box .details {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right; }
+    .my-order .box .details li h3 {
+      color: #ec3454;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .my-order .box .details li {
+      color: #8a8a8a;
+      font-size: 20px;
+      padding: 10px; }
+  .my-order .box .check {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .my-order .box .check li:first-child button {
+      background-color: #008d3d;
+      color: #fff; }
+    .my-order .box .check li:last-child button {
+      background-color: #ec3454;
+      color: #fff; }
+    .my-order .box .check button {
+      border: none;
+      outline: none;
+      padding: 10px;
+      margin-top: 20px;
+      width: 200px;
+      border-radius: 30px;
+      font-weight: bold; }
+
+@media (max-width: 768px) {
+  .my-order .box .image, .my-order .box .details, .my-order .box .check {
+    display: block; }
+  .my-order .box .image {
+    text-align: center; }
+    .my-order .box .image img {
+      width: 100%; }
+  .my-order .box .details {
+    text-align: center;
+    width: 100%; }
+    .my-order .box .details li h3 {
+      margin-bottom: 0; }
+  .my-order .box .check {
+    width: 100%;
+    text-align: center; } }
+
+@media (max-width: 786px) {
+  .my-order .box .image {
+    text-align: center;
+    width: 100%; }
+    .my-order .box .image img {
+      width: 55%; }
+  .my-order .box .details {
+    text-align: center; } }
+
+.orders {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #ec3454;
+  color: #fff; }
+  .orders h5 {
+    font-weight: bold; }
+
+.client {
+  padding: 10px 10px 44px;
+  margin: 20px;
+  background-color: #ececec;
+  border-radius: 20px; }
+  .client .image {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .client .image img {
+      width: 35%; }
+  .client ul.details {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    .client ul.details li h3 {
+      color: #333;
+      font-weight: bold; }
+    .client ul.details li {
+      margin-top: 15px;
+      color: #ae3367; }
+  .client span:first-of-type {
+    display: inline-block;
+    float: right;
+    background-color: #ec3454;
+    color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px; }
+  .client span:last-of-type {
+    display: inline-block;
+    float: right;
+    background-color: #009523;
+    color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px; }
+  .client button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    width: 70%;
+    margin: 20px auto 0; }
+  .client button.call {
+    background-color: #ec3454; }
+  .client button.reseve {
+    background-color: #008d3d; }
+  .client button.refuse {
+    background-color: #240041; }
+  .client button.req-done {
+    background-color: #008d3d; }
+
+@media (max-width: 768px) {
+  .client .image {
+    text-align: center;
+    justify-content: center; }
+  .client ul.details {
+    text-align: center; }
+  .client span {
+    display: block;
+    width: 200px;
+    margin: auto;
+    position: relative;
+    right: 50%; } }
+
+.offers .title {
+  text-align: right; }
+  .offers .title h4 {
+    font-weight: bold;
+    padding: 10px;
+    border-right: 3px solid #333;
+    color: #ee4664; }
+
+.offers a {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px 0 30px;
+  display: inline-block; }
+  .offers a button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    background-color: #c11c4e;
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px; }
+
+.offers .image {
+  margin-bottom: 25px; }
+  .offers .image img {
+    width: 100%; }
+
+.register {
+  background-image: url(../imgs/Group1040.png);
+  background-size: cover;
+  background-position: center;
+  margin: 30px 0; }
+  .register form {
+    box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #ccc;
+    padding: 30px 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px; }
+    .register form .image {
+      width: 30%;
+      margin: auto; }
+      .register form .image img {
+        width: 100%; }
+    .register form input {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+      font-size: 20px;
+      background-color: #f3f3f3; }
+    .register form input[type="submit"] {
+      width: 35%;
+      padding: 10px;
+      margin: auto;
+      font-weight: bold;
+      background-color: #ce2350;
+      color: #fff; }
+
+.register-seller {
+  background-image: url(../imgs/Group1040.png);
+  background-size: cover;
+  background-position: center;
+  margin: 30px 0; }
+  .register-seller form {
+    box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #ccc;
+    padding: 30px 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px; }
+    .register-seller form .image {
+      width: 30%;
+      margin: auto; }
+      .register-seller form .image img {
+        width: 100%; }
+    .register-seller form input {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+      font-size: 20px;
+      background-color: #f3f3f3; }
+    .register-seller form span {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+      padding: 15px 71px 15px 0;
+      text-align: right;
+      height: 100%;
+      font-size: 20px; }
+    .register-seller form .photo {
+      text-align: right;
+      margin: 40px 0; }
+      .register-seller form .photo img {
+        width: 30%; }
+    .register-seller form input[type="submit"] {
+      width: 35%;
+      padding: 10px;
+      margin: auto;
+      font-weight: bold;
+      background-color: #ce2350;
+      color: #fff; }
+
+@media (max-width: 768px) {
+  .register-seller form span {
+    padding: 15px;
+    justify-content: center; }
+  .register-seller form .photo {
+    text-align: center;
+    margin: 0 10px 10px; }
+    .register-seller form .photo img {
+      width: 30%; } }
+
+.register-1 {
+  position: relative;
+  background-image: url(../imgs/Group1040.png);
+  background-size: cover;
+  background-position: center;
+  margin: 30px 0; }
+  .register-1 form {
+    box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #ccc;
+    padding: 30px 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px; }
+    .register-1 form .image {
+      width: 30%;
+      margin: auto; }
+      .register-1 form .image img {
+        width: 100%; }
+    .register-1 form input {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+      font-size: 20px;
+      background-color: #f3f3f3; }
+    .register-1 form input[type="submit"] {
+      width: 35%;
+      padding: 10px;
+      margin: auto;
+      font-weight: bold;
+      background-color: #ce2350;
+      color: #fff; }
+    .register-1 form span {
+      display: block;
+      color: #ee4965;
+      padding: 10px 20px;
+      margin-top: 40px; }
+    .register-1 form span.new-user {
+      text-align: right; }
+    .register-1 form span.forg-psw {
+      text-align: left; }
+    .register-1 a {
+      position: absolute;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 10px; }
+      .register-1 a button {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        background-color: #ce2350;
+        padding: 10px;
+        border-radius: 30px;
+        width: 200px;
+        font-weight: bold; }
+
+@media (max-width: 768px) {
+  .register-1 form span {
+    display: block;
+    color: #ee4965;
+    padding: 10px 20px;
+    margin-top: 10px; }
+  .register-1 form span.new-user, .register-1 form span.forg-psw {
+    text-align: center; } }
+
+.page-seller .banner {
+  position: relative;
+  background-image: url(../imgs/offer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 625px; }
+  .page-seller .banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(202, 48, 92, 0.9);
+    z-index: 1; }
+  .page-seller .banner .image {
+    position: absolute;
+    width: 30%;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    top: 20%;
+    z-index: 2; }
+    .page-seller .banner .image img {
+      width: 90%; }
+  .page-seller .banner ul.rate {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    bottom: 5%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px;
+    z-index: 2; }
+    .page-seller .banner ul.rate li {
+      display: inline-block;
+      margin: 10px; }
+      .page-seller .banner ul.rate li i {
+        font-size: 30px; }
+      .page-seller .banner ul.rate li i.active {
+        color: #ff4057; }
+
+@media (max-width: 768px) {
+  .page-seller .banner {
+    min-height: 400px; }
+    .page-seller .banner .image {
+      width: 35%; }
+      .page-seller .banner .image img {
+        width: 100%; }
+    .page-seller .banner ul.rate {
+      width: 30%;
+      bottom: 10%;
+      padding: 2px; }
+      .page-seller .banner ul.rate li {
+        display: inline-block;
+        margin: 2px; }
+        .page-seller .banner ul.rate li i {
+          font-size: 18px; }
+        .page-seller .banner ul.rate li i.active {
+          color: #ff4057; } }
+
+.list-of-foods {
+  background-image: url(../imgs/favor-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 1301px; }
+  .list-of-foods .title {
+    padding-top: 30px; }
+    .list-of-foods .title h3 {
+      font-weight: bold;
+      color: #240041; }
+  .list-of-foods a {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px; }
+    .list-of-foods a button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: #fff;
+      background-color: #ce2350;
+      padding: 10px;
+      border-radius: 30px;
+      width: 200px;
+      font-weight: bold; }
+  .list-of-foods .image {
+    position: relative;
+    text-align: center;
+    margin-top: 20px; }
+    .list-of-foods .image i {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 30px;
+      border-radius: 50%; }
+    .list-of-foods .image img {
+      width: 100%; }
+  .list-of-foods .details {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; }
+    .list-of-foods .details h4 {
+      font-weight: bold;
+      color: #ce2350; }
+    .list-of-foods .details span {
+      display: block;
+      text-align: center;
+      font-size: 13px;
+      color: #848484; }
+    .list-of-foods .details .image {
+      width: 100%;
+      padding: 10px;
+      text-align: right; }
+      .list-of-foods .details .image img {
+        width: 15%; }
+      .list-of-foods .details .image span {
+        display: inline-block;
+        padding: 10px;
+        color: #ce2350; }
+    .list-of-foods .details .image:last-child {
+      margin-top: 0; }
+
+.restuarent-page .banner {
+  position: relative;
+  background-image: url(../imgs/offer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 625px; }
+  .restuarent-page .banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(202, 48, 92, 0.9);
+    z-index: 1; }
+  .restuarent-page .banner .image {
+    position: absolute;
+    width: 30%;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    top: 20%;
+    z-index: 2; }
+    .restuarent-page .banner .image img {
+      width: 90%; }
+  .restuarent-page .banner ul.rate {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 30%;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    bottom: 5%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px;
+    z-index: 2; }
+    .restuarent-page .banner ul.rate li {
+      display: inline-block;
+      margin: 10px; }
+      .restuarent-page .banner ul.rate li i {
+        font-size: 30px; }
+      .restuarent-page .banner ul.rate li i.active {
+        color: #ff4057; }
+
+@media (max-width: 768px) {
+  .restuarent-page .banner {
+    min-height: 400px; }
+    .restuarent-page .banner .image {
+      width: 35%; }
+      .restuarent-page .banner .image img {
+        width: 100%; }
+    .restuarent-page .banner ul.rate {
+      width: 30%;
+      bottom: 10%;
+      padding: 2px; }
+      .restuarent-page .banner ul.rate li {
+        display: inline-block;
+        margin: 2px; }
+        .restuarent-page .banner ul.rate li i {
+          font-size: 18px; }
+        .restuarent-page .banner ul.rate li i.active {
+          color: #ff4057; } }
+
+.footer {
+  background-image: url(../imgs/footerbg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  color: #fff;
+  padding: 30px 0; }
+  .footer .title {
+    text-align: right; }
+    .footer .title i {
+      color: #00eed1; }
+    .footer .title h4 {
+      display: inline-block;
+      margin-right: 15px; }
+  .footer .text {
+    text-align: right;
+    line-height: 2;
+    padding: 0 0 0 136px;
+    margin-top: 30px; }
+  .footer .social {
+    text-align: right;
+    margin-top: 30px; }
+    .footer .social i {
+      display: inline-block;
+      margin-left: 20px; }
+  .footer .image {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .footer .image img {
+      width: 50%; }
+
+@media (max-width: 768px) {
+  .footer .title {
+    text-align: center; }
+  .footer .text {
+    text-align: center;
+    padding: 0; }
+  .footer .social {
+    text-align: center; }
+  .footer .image {
+    margin-top: 20px;
+    justify-content: center; } }

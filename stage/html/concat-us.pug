@@ -1,0 +1,30 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title contact us
+    include pug/csslinks
+  body
+    
+    // start header 
+    include pug/header
+    // end header 
+    
+    // start contact us 
+    div(class="contact-us")
+      div(class="container-fluid")
+        form
+          div(class="title")
+            h5 تواصل معنا
+          input(type="text" placeholder="الاسم كاملا")
+          input(type="email" placeholder="البريد الالكترونى")
+          input(type="number" placeholder="الجوال")
+          textarea(placeholder="ما هى رسالتك")
+          input(type="submit" value="احفظ التعديلات")
+    // start contact us 
+    
+    // start footer 
+    include pug/footer
+    // end footer 
+    
+    include pug/jslinks

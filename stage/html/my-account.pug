@@ -1,0 +1,32 @@
+doctype html
+html(dir="rtl")
+  head
+    meta(charset="UTF-8")
+    title my account
+    include pug/csslinks
+  body
+    
+    // start header 
+    include pug/header
+    // end header 
+    
+    // start my account 
+    div(class="account")
+      div(class="container-fluid")
+        form
+          div(class="image")
+            img(src="imgs/use-img.png" alt="image")
+          input(type="text" placeholder="الاسم كاملا")
+          input(type="email" placeholder="البريد الالكترونى")
+          input(type="number" placeholder="الجوال")
+          input(type="text" placeholder="البلد")
+          input(type="text" placeholder="المحافظة")
+          textarea(placeholder="العنوان باالتفصيل")
+          input(type="submit" value="احفظ التعديلات")
+    // end my account 
+    
+    // start footer 
+    include pug/footer
+    // end footer 
+    
+    include pug/jslinks

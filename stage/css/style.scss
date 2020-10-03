@@ -1,0 +1,1397 @@
+// start main rules
+@font-face {
+  font-family: cairo;
+  src: url(../fonts/Cairo-Regular.ttf);
+}
+body {
+  font-family: cairo;
+}
+.clear-fix {
+  clear: both;
+}
+// end main rules
+
+// start header
+@import "scss/_header";
+// end header
+
+// start banner
+.banner {
+  position: relative;
+  background-image: url(../imgs/header.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 481px;
+  .head {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    p {
+      font-size: 40px
+    }
+    img {
+      width: 30%
+    }
+  }
+}
+// end banner
+
+// start your favorite food
+.fav-food {
+  background-image: url(../imgs/favor-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  padding: 30px 0;
+  .title {
+    text-align: center;
+    h2 {
+      font-weight: bolder;
+    }
+  }
+  form {
+    margin-top: 40px;
+    input {
+      border: none;
+      outline: none;
+      padding: 10px;
+      width: 70%;
+      border-radius: 10px
+    }
+    input[type="text"] {
+      float: left;
+    }
+    input[type="search"] {
+      float: right;
+    }
+  }
+  .foods {
+    .lists {
+      overflow: hidden;
+      background-color: #fff;
+      margin-top: 40px;
+      padding: 30px 10px;
+      border-radius: 10px;
+      .image {
+        display: inline-block;
+        width: 50%;
+        float: right;
+        text-align: right;
+        img {
+          width: 70%
+        }
+      }
+      .details {
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+        .brand {
+          h3 {
+            font-weight: bolder;
+            color: #ec3454;
+          }
+        }
+        .rate {
+          i {
+            display: inline-block;
+            margin: 5px
+          }
+        }
+        .unlock {
+          text-align: left;
+        }
+        .unlock::before {
+          content: "";
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #16bf4e;
+          position: relative;
+          top: 10px;
+          left: 10px;
+        }
+        .min-order {
+          font-size: 20px
+        }
+      }
+    }
+  }
+}
+// end your favorite food
+
+// start meida your favorite food
+@media (max-width: 768px) {           // for sm screen
+  .fav-food {
+    .foods {
+      .lists {
+        .image, .details {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+        .image {
+          img {
+            width: 30%
+          }
+        }
+      }
+    }
+  }
+}
+// end meida your favorite food
+
+// start a lot of offers
+.offers {
+  padding: 100px 0;
+  .image {
+    text-align: right;
+    img {
+      width: 70%
+    }
+  }
+  .text {
+    position: relative;
+    height: 100%;
+    background-image: url(../imgs/offer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    z-index: 1;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      background-color: rgba(163, 114, 123, 0.9);
+      z-index: 2;
+    }
+    p {
+      color: #fff;
+      padding: 10px;
+      line-height: 2;
+      text-align: center;
+      font-size: 20px;
+      z-index: 3;
+    }
+  }
+}
+// end a lot of shows
+
+// start our app
+.our-app {
+  background-image: url(../imgs/app-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 603px;
+  padding-top: 50px;
+  .title {
+    text-align: right;
+    h4 {
+      color: #fff
+    }
+  }
+  .image {
+    img {
+      width: 100%
+    }
+  }
+  .image-btn {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    height: 100%;
+    img {
+      width: 60%
+    }
+  }
+}
+// end our app
+
+// start media our app
+@media (max-width: 768px) {
+  .our-app {
+    .title {
+      text-align: center;
+    }
+    .image-btn {
+      justify-content: center;
+    }
+  }
+}
+// end media our app
+
+// start add a new offer
+.add-new-offer {
+  padding: 30px 0;
+  .title {
+    text-align: center;
+    color: #ec3454;
+    h5 {
+      font-weight: bold;
+    }
+  }
+  form {
+    background-color: #ececec;
+    padding: 30px;
+    border-radius: 30px;
+    .image {
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+        width: 15%
+      }
+      span {
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    input, textarea {
+      display: block;
+      width: 80%;
+      margin: auto;
+      padding: 15px;
+      border: none;
+      outline: none;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      background-color: #f3f3f3;
+      font-size: 20px;
+    }
+    textarea {
+      min-height: 200px
+    }
+    input[type="submit"] {
+      width: 20%;
+      margin: auto;
+      background-color: #d02450;
+      color: #fff
+    }
+  }
+}
+// end add a new offer
+
+// start add a new product
+.add-new-product {
+  padding: 30px 0;
+  .title {
+    text-align: center;
+    color: #ec3454;
+    h5 {
+      font-weight: bold;
+    }
+  }
+  form {
+    background-color: #ececec;
+    padding: 30px;
+    border-radius: 30px;
+    .image {
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+        width: 15%
+      }
+      span {
+        display: block;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    input, textarea {
+      display: block;
+      width: 80%;
+      margin: auto;
+      padding: 15px;
+      border: none;
+      outline: none;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      background-color: #f3f3f3;
+      font-size: 20px;
+    }
+    textarea {
+      min-height: 200px
+    }
+    input[type="submit"] {
+      width: 20%;
+      margin: auto;
+      background-color: #d02450;
+      color: #fff
+    }
+  }
+}
+// end add a new product
+
+// start cart-1
+.cart-1 {
+  background-image: url(../imgs/cart-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 1147px;
+  padding: 50px 0;
+  .cart {
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto 50px;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px #ccc, -10px -10px 10px #ccc;
+    border-radius: 30px;
+    padding: 15px;
+    .image, .details {
+      width: 50%;
+    }
+    .image {
+      float: right;
+      text-align: right;
+      img {
+        width: 100%;
+        border-radius: 20px
+      }
+    }
+    ul.details {
+      float: left;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        text-align: right;
+        font-weight: bold;
+        margin-right: 15px;
+        margin-bottom: 10%;
+      }
+    }
+    button {
+      background-color: transparent;
+      padding: 10px;
+      border-radius: 15px;
+      background-color: #ec3454;
+      color: #fff;
+      border: none;
+      outline: none;
+      width: 30%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 30px
+    }
+  }
+}
+// end cart-1
+
+// start media cart-1
+@media (max-width: 768px) {
+  .cart-1 {
+    .cart {
+      .image, .details {
+        width: 100%;
+      }
+      .image {
+        float: none;
+        text-align: right;
+      }
+      ul.details {
+        float: none;
+        li {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+// end media cart-1
+
+// start cart
+.cart {
+  background-image: url(../imgs/cart-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 1147px;
+}
+// end cart
+
+// start contact us
+.contact-us {
+  margin: 30px 0;
+  form {
+    background-color: #b7164c;
+    padding: 30px 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    .title {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 50px;
+      h5 {
+        font-weight: bold;
+      }
+    }
+    input, textarea {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+      font-size: 20px;
+    }
+    textarea {
+      border-radius: 0;
+      border-radius: 10px;
+      min-height: 200px
+    }
+    input[type="submit"] {
+      width: 30%;
+      margin: auto;
+      font-weight: bold;
+      background-color: #240041;
+      color: #fff
+    }
+  }
+}
+// end contact us
+
+// start beef burger
+.beef-burger {
+  background-image: url(../imgs/meal-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 1735px;
+  .image {
+    width: 80%;
+    margin: 40px auto;
+    img {
+      width: 100%;
+      border-radius: 30px
+    }
+  }
+  .title {
+    text-align: center;
+    h5 {
+      font-weight: bold;
+    }
+  }
+  p {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+    li {
+      margin: 20px 0;
+    }
+  }
+  .image-store {
+    width: 30%;
+    margin: auto;
+    img {
+      width: 100%
+    }
+  }
+  span {
+    display: block;
+    text-align: right;
+    color: #ff465c;
+    width: 80%;
+    margin: 50px auto;
+    font-size: 20px
+  }
+  .title-user {
+    text-align: right;
+    h3 {
+      font-weight: bold;
+      color: #ec3454;
+      padding: 10px;
+      border-right: 3px solid #333
+    }
+    span {
+      margin: 0;
+      color: #333;
+      font-size: 15px
+    }
+  }
+  .rates {
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+    .fontawsome {
+      position: relative;
+      left: 50%;
+      top: 10px;
+      transform: translateX(-50%);
+      display: inline-block;
+      padding: 10px;
+      border-radius: 30px;
+      text-align: center;
+      background-color: #fff;
+      i {
+        display: inline-block;
+        margin: 10px
+      }
+      i.active {
+        color: #ec3454;
+      }
+    }
+    p {
+      color: #ec3454;
+    }
+  }
+  .title-you {
+    text-align: right;
+    margin-top: 50px;
+    h3 {
+      font-weight: bold;
+      color: #ec3454;
+      padding: 10px;
+      border-right: 3px solid #333
+    }
+  }
+  .fontawsome-you {
+    position: relative;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #e5e5e5;
+    i {
+      display: inline-block;
+      margin: 10px
+    }
+    i.active {
+      color: #ec3454;
+    }
+  }
+  form {
+    textarea {
+      display: block;
+      width: 80%;
+      margin: auto;
+      padding: 15px;
+      border: none;
+      outline: none;
+      min-height: 200px;
+      border-radius: 30px;
+      background-color: #f9f9f9;
+      box-shadow: 10px 10px 10px #ccc;
+      font-size: 25px;
+      margin-bottom: 60px;
+    }
+    input[type="submit"] {
+      position: relative;
+      left: 50%;
+      bottom: 15px;
+      transform: translateX(-50%);
+      border: none;
+      outline: none;
+      padding: 10px;
+      width: 200px;
+      border-radius: 15px;
+      background-color: #c41e4e;
+      color: #fff;
+      font-weight: bold
+    }
+  }
+}
+// end beef burger
+
+// start my account
+.account {
+  margin: 30px 0;
+  form {
+    background-color: #b7164c;
+    padding: 30px 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    .image {
+      width: 30%;
+      margin: auto;
+      img {
+        width: 100%
+      }
+    }
+    input, textarea {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+      font-size: 20px;
+    }
+    textarea {
+      border-radius: 0;
+      border-radius: 10px;
+      min-height: 200px
+    }
+    input[type="submit"] {
+      width: 35%;
+      padding: 10px;
+      margin: auto;
+      font-weight: bold;
+      background-color: #240041;
+      color: #fff
+    }
+  }
+}
+// end my account
+
+// start my order
+.my-order {
+  .background {
+    padding: 40px 0;
+    background-color: #ec3454;
+    color: #fff;
+    text-align: center;
+    .recently-order, .past-order {
+      h5 {
+        font-weight: bold;
+      }
+    }
+  }
+  .box {
+    padding: 30px 10px;
+    margin: 50px 0;
+    background-color: #ececec;
+    .image, .details, .check {
+      display: inline-block;
+      width: 30%
+    }
+    .image {
+      text-align: left;
+      img {
+        width: 100%;
+      }
+    }
+    .details {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: right;
+      li h3 {
+        color: #ec3454;
+        font-weight: bold;
+        margin-bottom: 20px
+      }
+      li {
+        color: #8a8a8a;
+        font-size: 20px;
+        padding: 10px
+      }
+    }
+    .check {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li:first-child button {
+        background-color: #008d3d;
+        color: #fff
+      }
+      li:last-child button {
+        background-color: #ec3454;
+        color: #fff
+      }
+      button {
+        border: none;
+        outline: none;
+        padding: 10px;
+        margin-top: 20px;
+        width: 200px;
+        border-radius: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+// end my order
+
+// start media my order
+@media (max-width: 768px) {
+  .my-order {
+    .box {
+      .image, .details, .check {
+        display: block;
+      }
+      .image {
+        text-align: center;
+        img {
+          width: 100%;
+        }
+      }
+      .details {
+        text-align: center;
+        width: 100%;
+        li h3 {
+          margin-bottom: 0;
+        }
+      }
+      .check {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+// end media my order
+
+// start media my order
+@media (max-width: 786px) {
+  .my-order {
+    .box {
+      .image {
+        text-align: center;
+        width: 100%;
+        img {
+          width: 55%;
+        }
+      }
+      .details {
+        text-align: center;
+      }
+    }
+  }
+}
+// end media my order
+
+// start my current orders
+.orders {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #ec3454;
+  color: #fff;
+  h5 {
+    font-weight: bold;
+  }
+}
+// end my current orders
+
+// start client
+.client {
+  padding: 10px 10px 44px;
+  margin: 20px;
+  background-color: #ececec;
+  border-radius: 20px;
+  .image {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      width: 35%;
+    }
+  }
+  ul.details {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li h3 {
+      color: #333;
+      font-weight: bold;
+    }
+    li {
+      margin-top: 15px;
+      color: #ae3367;
+    }
+  }
+  span:first-of-type {
+    display: inline-block;
+    float: right;
+    background-color: #ec3454;
+    color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  span:last-of-type {
+    display: inline-block;
+    float: right;
+    background-color: #009523;
+    color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    width: 70%;
+    margin: 20px auto 0;
+  }
+  button.call {
+    background-color: #ec3454;
+  }
+  button.reseve {
+    background-color: #008d3d;
+  }
+  button.refuse {
+    background-color: #240041;
+  }
+  button.req-done {
+    background-color: #008d3d;
+  }
+}
+// end client
+
+// start media client
+@media (max-width: 768px) {
+  .client {
+    .image {
+      text-align: center;
+      justify-content: center;
+    }
+    ul.details {
+      text-align: center;
+    }
+    span {
+      display: block;
+      width: 200px;
+      margin: auto;
+      position: relative;
+      right: 50%;
+    }
+  }
+}
+// end media client
+
+// start offers
+.offers {
+  .title {
+    text-align: right;
+    h4 {
+      font-weight: bold;
+      padding: 10px;
+      border-right: 3px solid #333;
+      color: #ee4664;
+    }
+  }
+  a {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0 30px;
+    display: inline-block;
+    button {
+      display: inline-block;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      color: #fff;
+      background-color: #c11c4e;
+      padding: 10px;
+      border-radius: 20px;
+      width: 200px;
+
+    }
+  }
+  .image {
+    margin-bottom: 25px;
+    img {
+      width: 100%
+    }
+  }
+}
+// end offers
+
+// start register
+.register {
+  background-image: url(../imgs/Group1040.png);
+  background-size: cover;
+  background-position: center;
+  margin: 30px 0;
+  form {
+    box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #ccc;
+    padding: 30px 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    .image {
+      width: 30%;
+      margin: auto;
+      img {
+        width: 100%
+      }
+    }
+    input {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+      font-size: 20px;
+      background-color: #f3f3f3;
+    }
+    input[type="submit"] {
+      width: 35%;
+      padding: 10px;
+      margin: auto;
+      font-weight: bold;
+      background-color: #ce2350;
+      color: #fff
+    }
+  }
+}
+// end register
+
+// start register seller
+.register-seller {
+  background-image: url(../imgs/Group1040.png);
+  background-size: cover;
+  background-position: center;
+  margin: 30px 0;
+  form {
+    box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #ccc;
+    padding: 30px 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    .image {
+      width: 30%;
+      margin: auto;
+      img {
+        width: 100%
+      }
+    }
+    input {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+      font-size: 20px;
+      background-color: #f3f3f3;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+      padding: 15px 71px 15px 0;
+      text-align: right;
+      height: 100%;
+      font-size: 20px;
+    }
+    .photo {
+      text-align: right;
+      margin: 40px 0;
+      img {
+        width: 30%;
+      }
+    }
+    input[type="submit"] {
+      width: 35%;
+      padding: 10px;
+      margin: auto;
+      font-weight: bold;
+      background-color: #ce2350;
+      color: #fff
+    }
+  }
+}
+// end register seller
+
+// start media register seller
+@media (max-width: 768px) {
+  .register-seller {
+    form {
+      span {
+        padding: 15px;
+        justify-content: center;
+      }
+      .photo {
+        text-align: center;
+        margin: 0 10px 10px;
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+// end media register seller
+
+// start register-1
+.register-1 {
+  background-image: url(../imgs/Group1040.png);
+  background-size: cover;
+  background-position: center;
+  margin: 30px 0;
+  form {
+    box-shadow: 10px 10px 5px #ccc, -10px -10px 5px #ccc;
+    padding: 30px 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    .image {
+      width: 30%;
+      margin: auto;
+      img {
+        width: 100%
+      }
+    }
+    input {
+      display: block;
+      border: none;
+      outline: none;
+      padding: 15px;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+      font-size: 20px;
+      background-color: #f3f3f3;
+    }
+    input[type="submit"] {
+      width: 35%;
+      padding: 10px;
+      margin: auto;
+      font-weight: bold;
+      background-color: #ce2350;
+      color: #fff
+    }
+    span {
+      display: block;
+      color: #ee4965;
+      padding: 10px 20px;
+      margin-top: 40px;
+    }
+    span.new-user {
+      text-align: right;
+    }
+    span.forg-psw {
+      text-align: left;
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 40px;
+      button {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        background-color: #ce2350;
+        padding: 10px;
+        border-radius: 30px;
+        width: 200px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+// end register-1
+
+// start meida register-1
+@media (max-width: 768px) {
+  .register-1 {
+    form {
+      span {
+        display: block;
+        color: #ee4965;
+        padding: 10px 20px;
+        margin-top: 10px;
+      }
+      span.new-user, span.forg-psw {
+        text-align: center;
+      }
+    }
+  }
+}
+// end meida register-1
+
+// start restaurant page seller
+.page-seller {
+  .banner {
+    position: relative;
+    background-image: url(../imgs/offer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 625px;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(202, 48, 92, 0.9);
+      z-index: 1
+    }
+    .image {
+      position: absolute;
+      width: 30%;
+      right: 50%;
+      transform: translateX(50%);
+      text-align: center;
+      top: 20%;
+      z-index: 2;
+      img {
+        width: 90%
+      }
+    }
+    ul.rate {
+      position: absolute;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 30%;
+      right: 50%;
+      transform: translateX(50%);
+      text-align: center;
+      bottom: 5%;
+      background-color: #fff;
+      border-radius: 30px;
+      padding: 10px;
+      z-index: 2;
+      li {
+        display: inline-block;
+        margin: 10px;
+        i {
+          font-size: 30px;
+        }
+        i.active {
+          color: #ff4057;
+        }
+      }
+    }
+  }
+}
+// end restaurant page seller
+
+// start media restaurant page seller
+@media (max-width: 768px) {
+  .page-seller {
+    .banner {
+      min-height: 400px;
+      .image {
+        width: 35%;
+        img {
+          width: 100%
+        }
+      }
+      ul.rate {
+        width: 30%;
+        bottom: 10%;
+        padding: 2px;
+        li {
+          display: inline-block;
+          margin: 2px;
+          i {
+            font-size: 18px;
+          }
+          i.active {
+            color: #ff4057;
+          }
+        }
+      }
+    }
+  }
+}
+// end media restaurant page seller
+
+// start list of foods
+.list-of-foods {
+  background-image: url(../imgs/favor-bg.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 1301px;
+  .title {
+    padding-top: 30px;
+    h3 {
+      font-weight: bold;
+      color: #240041;
+    }
+  }
+  a {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+    button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: #fff;
+      background-color: #ce2350;
+      padding: 10px;
+      border-radius: 30px;
+      width: 200px;
+      font-weight: bold;
+    }
+  }
+  .image {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    i {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 30px;
+      border-radius: 50%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .details {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    h4 {
+      font-weight: bold;
+      color: #ce2350;
+    }
+    span {
+      display: block;
+      text-align: center;
+      font-size: 13px;
+      color: #848484;
+    }
+    .image {
+      width: 100%;
+      padding: 10px;
+      text-align: right;
+      img {
+        width: 15%
+      }
+      span {
+        display: inline-block;
+        padding: 10px;
+        color: #ce2350;
+      }
+    }
+    .image:last-child {
+      margin-top: 0
+    }
+  }
+}
+// end list of foods
+
+// start Sofra restuarent page
+.restuarent-page {
+  .banner {
+    position: relative;
+    background-image: url(../imgs/offer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 625px;
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(202, 48, 92, 0.9);
+      z-index: 1
+    }
+    .image {
+      position: absolute;
+      width: 30%;
+      right: 50%;
+      transform: translateX(50%);
+      text-align: center;
+      top: 20%;
+      z-index: 2;
+      img {
+        width: 90%
+      }
+    }
+    ul.rate {
+      position: absolute;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 30%;
+      right: 50%;
+      transform: translateX(50%);
+      text-align: center;
+      bottom: 5%;
+      background-color: #fff;
+      border-radius: 30px;
+      padding: 10px;
+      z-index: 2;
+      li {
+        display: inline-block;
+        margin: 10px;
+        i {
+          font-size: 30px;
+        }
+        i.active {
+          color: #ff4057;
+        }
+      }
+    }
+  }
+}
+// end Sofra restuarent page
+
+// start meida Sofra restuarent page
+@media (max-width: 768px) {
+  .restuarent-page {
+    .banner {
+      min-height: 400px;
+      .image {
+        width: 35%;
+        img {
+          width: 100%
+        }
+      }
+      ul.rate {
+        width: 30%;
+        bottom: 10%;
+        padding: 2px;
+        li {
+          display: inline-block;
+          margin: 2px;
+          i {
+            font-size: 18px;
+          }
+          i.active {
+            color: #ff4057;
+          }
+        }
+      }
+    }
+  }
+}
+// end meida Sofra restuarent page
+
+// start footer
+@import "scss/_footer"
+// end footer
